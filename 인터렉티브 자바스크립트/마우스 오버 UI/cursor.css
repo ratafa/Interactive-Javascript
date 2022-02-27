@@ -1,0 +1,78 @@
+body {
+  background: #4197c9;
+  overflow: hidden;
+}
+/* 바탕화면 색깔 */
+.cursorItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  opacity: .5;
+}
+/* 마우스 동그라미 */
+
+.cursorItem .circle {
+  position: fixed;
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: -60px 0 0 -60px;
+  background: #a300a8;
+  border-radius: 50%;
+  transition: all .2s ease-in-out;
+}
+/* 접근 시, 원이 작아지며 색상이 변경 */
+
+.gate-box {
+  position: absolute;
+  top: 40%;
+  left: calc(50% - 200px);
+  width: 400px;
+}
+/* 박스 크기 및 위치 */
+.gate-box .top {
+  border: 2px solid #fff;
+  border-bottom: none;
+  padding: 5px;
+}
+/* 박스 위쪽 */
+.gate-box .top p {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+/* 박스 위의 "마스크를 쓰고 있나요" 멘트 */
+.gate-box p {
+  font-size: 20px;
+  color: #fff;
+}
+/* p태그 폰트 사이즈 */
+.gate-box .bottom {
+  border: 2px solid #fff;
+}
+/* 박스 아랫면  */
+.gate-box .bottom .inner {
+    display: flex;
+}
+
+.gate-box .bottom a {
+  font-size: 20px;
+  color: #fff;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 0;
+  transition: all .3s ease;
+}
+
+.gate-box .bottom a:hover {
+  background: #fff;
+  color: #4197c9;
+}
+
+.gate-box .bottom #yes {
+  border-right: 2px solid #fff;
+}

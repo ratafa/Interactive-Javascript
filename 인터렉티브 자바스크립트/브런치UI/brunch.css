@@ -1,0 +1,46 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.titleWrap {
+    position: fixed;
+    height: 800px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    position: absolute;
+    color: white;
+    text-align: center;
+    padding-top: 320px;
+    width: 100%;
+    font-size: 50px;
+    z-index: 1;
+}
+
+.coverImg {
+    position: fixed;
+    width: 100%;
+    height: 800px;
+    background: url(hawai.jfif) center center / cover no-repeat;
+}
+
+.cover {
+    position: fixed;
+    width: 100%;
+    height: 800px;
+    background-color: black;
+}
+
+.textWrap {
+    position: relative;
+    width: 100%;
+    margin-top: 800px;
+    padding-top: 100px;
+    background-color: white;
+    z-index: 1;
+}
